@@ -40,7 +40,7 @@ class LinkedList {
         if (index==0) {
             this.head = this.head.getNext();
         } else if (index > 0){
-            let current = head;
+            let current = this.head;
             // stop at the node BEFORE what we want to delete
             for (let i =0; i < index-1; i++) {
                 current = current.getNext();
@@ -63,7 +63,7 @@ class LinkedList {
             // the new node will be the new header
             this.head = newNode;
         } else {
-            let current = head;
+            let current = this.head;
             for (let i =0; i < index -1; i++) {
                 current = current.getNext();
             }
